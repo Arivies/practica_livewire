@@ -1,5 +1,6 @@
 <?php
 
+//use App\Http\Livewire\Productos;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,9 @@ Route::get('/', function () {
 Route::get('/users', function () {
     return view('user_partial');
 })->name('usuarios');
+
+Route::get('/productos', function () {
+    return view('productos_partial');
+})->name('productos');
+
+//Route::get('/productos',Productos::class);

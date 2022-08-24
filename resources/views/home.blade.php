@@ -9,9 +9,10 @@
 </head>
 <body>
     <a href="{{ route('usuarios') }}">Lista de Usuarios</a>
+    <a href="{{ route('productos') }}">Lista de Productos</a>
 
-    <livewire:counter />
-
+    {{-- <livewire:counter /> --}}
+    @livewire('counter')
 
     @livewireScripts
 </body>
