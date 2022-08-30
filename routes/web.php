@@ -16,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/contador', function () {
+    return view('counter_partial');
+})->name('contador');
 
 Route::get('/users', function () {
     return view('user_partial');

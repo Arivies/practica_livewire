@@ -1,8 +1,10 @@
 @extends('home')
 
 @section('content')
-    @livewire('users')
-{{-- <livewire:users /> --}}
+<div>
+    @livewire('counter')
+    {{-- <livewire:counter />--}}
 
     @livewireScripts
+</div>
 @endsection
